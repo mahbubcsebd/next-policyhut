@@ -1,0 +1,31 @@
+.pcClientTitle {
+    color: var(--gray-900, #0e1941);
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 40px;
+}
+
+.pcWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.singlePC {
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ebebeb;
+}
+
+.singlePC:first-child,
+.singlePC:nth-child(5) {
+    border-left: 0 !important;
+}
+
+.singlePC:nth-child(4),
+.singlePC:last-child {
+    border-right: 0 !important;
+}

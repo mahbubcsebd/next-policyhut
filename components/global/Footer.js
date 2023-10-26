@@ -1,106 +1,201 @@
 'use client';
 
+import facebook from '@/public/icons/facebook.svg';
+import instagram from '@/public/icons/instagram.svg';
+import linkedin from '@/public/icons/linkedin.svg';
+import logoLight from '@/public/icons/logo-light.svg';
+import twitter from '@/public/icons/twitter.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Col, Container, Row } from 'react-bootstrap';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import location from '../public/icons/location.svg';
-import logoLight from '../public/icons/logo-light.svg';
-import classes from '../styles/footer.module.scss';
+import styles from './footer.module.css';
 
 function Footer() {
     return (
-        <footer id="footer" className="footer">
-            <div className={`${classes.footerArea}`}>
+        <footer
+            id="footer"
+            className="footer"
+        >
+            <div className={`${styles.footerArea}`}>
                 <Container>
-                    <Row className={`${classes.footerMiddle}`}>
-                        <Col lg={6} className="mb-5">
-                            <div className={`${classes.footerContent}`}>
-                                <div className={`${classes.footerLogo}`}>
-                                    <Image src={logoLight} alt="logo" />
+                    <Row className={`${styles.footerMiddle}`}>
+                        <Col
+                            lg={3}
+                            className="mb-5"
+                        >
+                            <div className={`${styles.footerContent}`}>
+                                <div className={`${styles.footerLogo}`}>
+                                    <Image
+                                        src={logoLight}
+                                        alt="logo"
+                                    />
                                 </div>
-                                <div className={`${classes.footerAddress}`}>
-                                    <div className={`${classes.locationIcon}`}>
-                                        <Image src={location} alt="location" />
-                                    </div>
-                                    <h3>Ultimate Data Protection</h3>
+                                <div className={`${styles.quickContact} mb-4`}>
+                                    <p>Call Us</p>
+                                    <h2 className={`${styles.footerCon}`}>
+                                        1-214-657-8098
+                                    </h2>
                                 </div>
-                                <div className={`${classes.quickContact}`}>
-                                    <p>Quick Contact</p>
-                                    <h2 className={`${classes.footerPhone}`}>
-                                        Phone: 555-123-4567
+                                <div className={`${styles.quickContact}`}>
+                                    <p>Email Us</p>
+                                    <h2 className={`${styles.footerCon}`}>
+                                        example@gmail.com
                                     </h2>
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={6} xxl={3} className="mb-5">
-                            <div className={`${classes.footerMenu}`}>
-                                <h2 className={`${classes.menuCategory}`}>Quick Links</h2>
-                                <ul className={`${classes.footerMenuList}`}>
+                        <Col
+                            lg={6}
+                            xxl={4}
+                            className="mb-5"
+                        >
+                            <div className={`${styles.footerMenu}`}>
+                                <h2 className={`${styles.menuCategory}`}>
+                                    Services
+                                </h2>
+                                <ul
+                                    className={`${styles.footerMenuList} coumn-2`}
+                                >
                                     <li>
-                                        <a href="about.html">About Us</a>
+                                        <a href="#">Business insurance</a>
                                     </li>
                                     <li>
-                                        <Link href="/services">Services</Link>
+                                        <Link href="#">Home Insurance</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Track Your Shipment</Link>
+                                        <Link href="#">Life Insurance</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Get a Quote</Link>
+                                        <Link href="#">Health Insurance</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#">Marriage insurance</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#">Travel Insurance</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#">Cyber Insurance</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#">Vehicle Insurance</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#">
+                                            Disability Insurance
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="#">Fire Insurance</Link>
                                     </li>
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={6} xxl={3}>
-                            <div className={`${classes.footerMenu}`}>
-                                <h2 className={`${classes.menuCategory}`}>Support</h2>
-                                <ul className={`${classes.footerMenuList}`}>
+                        <Col
+                            lg={6}
+                            xxl={2}
+                        >
+                            <div className={`${styles.footerMenu}`}>
+                                <h2 className={`${styles.menuCategory}`}>
+                                    Quick Link
+                                </h2>
+                                <ul className={`${styles.footerMenuList}`}>
                                     <li>
-                                        <Link href="#">Contact Us</Link>
+                                        <Link href="/">Home</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Careers</Link>
+                                        <Link href="/about">About Us</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Privacy Policy</Link>
+                                        <Link href="/blog">Blog</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Terms of Use</Link>
+                                        <Link href="#">Our Team</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/contact">Contact Us</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </Col>
+                        <Col
+                            lg={6}
+                            xxl={2}
+                        >
+                            <div className={`${styles.footerMenu}`}>
+                                <h2 className={`${styles.menuCategory}`}>
+                                    Social
+                                </h2>
+                                <ul
+                                    className={`${styles.socialCollection} column-2`}
+                                >
+                                    <li>
+                                        <Link href="/">
+                                            <Image
+                                                src={twitter}
+                                                alt="social"
+                                            />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/">
+                                            <Image
+                                                src={facebook}
+                                                alt="social"
+                                            />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/">
+                                            <Image
+                                                src={linkedin}
+                                                alt="social"
+                                            />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/">
+                                            <Image
+                                                src={instagram}
+                                                alt="social"
+                                            />
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
                         </Col>
                     </Row>
+                    <div className={`${styles.footerDevider}`} />
                 </Container>
-                <div className={`${classes.footerDevider}`} />
+
                 <Container>
-                    <div className={`${classes.footerBottom}`}>
-                        <p className={`${classes.footerCopyright}`}>
-                            &copy; 2023 by UiBarn, All rights reserved.
-                        </p>
-                        <ul className={`${classes.footerSocial}`}>
+                    <div className={`${styles.footerBottom}`}>
+                        <ul
+                            className={`${styles.bottomMenu} ${styles.footerMenuList}`}
+                        >
                             <li>
-                                <Link href="https://www.facebook.com/">
-                                    <FaFacebookF />
-                                </Link>
+                                <Link href="#">Privacy Policy</Link>
                             </li>
+                            <li className={`${styles.circle}`}></li>
                             <li>
-                                <Link href="https://www.instagram.com/">
-                                    <FaInstagram />
-                                </Link>
+                                <Link href="#">Terms for clients</Link>
                             </li>
+                            <li className={`${styles.circle}`}></li>
                             <li>
-                                <Link href="https://twitter.com/">
-                                    <FaTwitter />
-                                </Link>
+                                <Link href="#">Terms for candidates</Link>
                             </li>
+                            <li className={`${styles.circle}`}></li>
                             <li>
-                                <Link href="https://www.linkedin.com/?original_referer=">
-                                    <FaLinkedinIn />
-                                </Link>
+                                <Link href="#">Imprint</Link>
+                            </li>
+                            <li className={`${styles.circle}`}></li>
+                            <li>
+                                <Link href="#">Contact</Link>
                             </li>
                         </ul>
+                        <p className={`${styles.footerCopyright}`}>
+                            &copy; 2023 Policyhut - All Rights Reserved.
+                        </p>
                     </div>
                 </Container>
             </div>

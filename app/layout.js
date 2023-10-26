@@ -1,7 +1,8 @@
+import { manrope } from "@/app/fonts";
+import Footer from "@/components/global/Footer";
 import Header from '@/components/global/Header';
 import TopBar from '@/components/global/TopBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { inter } from './fonts';
 import './globals.css';
 import "./reset.css";
 
@@ -13,11 +14,11 @@ export const metadata = {
  const RootLayout = ({ children }) => {
   return (
       <html lang="en">
-          <body className={`${inter.className}`}>
-          <TopBar/>
-          <Header/>
-            {children}
-            {/* <Footer/> */}
+          <body className={`${manrope.className}`}>
+              <TopBar />
+              <Header />
+              {children}
+              <Footer />
           </body>
       </html>
   );
