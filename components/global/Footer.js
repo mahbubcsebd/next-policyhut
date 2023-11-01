@@ -96,6 +96,7 @@ function Footer() {
                         <Col
                             xxl={2}
                             xl={4}
+                            lg={4}
                             sm={6}
                             className="mb-5"
                         >
