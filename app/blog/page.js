@@ -1,11 +1,9 @@
-'use client';
-
 import BlogAll from "@/components/blog/BlogAll";
 import Banner from "@/components/global/Banner";
 
-// export const metadata = {
-//     title: 'Logistic | Blog',
-// };
+export const metadata = {
+    title: 'Policyhut | Blog',
+};
 
 function Blog() {
     return (

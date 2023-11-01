@@ -20,6 +20,13 @@ const Solutions = () => {
                                 <h2 className="sectionTitle">
                                     Great Insurance your Solutions For Business
                                 </h2>
+                                <div className="chooseImage py-4 d-lg-none">
+                                    <Image
+                                        src={choose1}
+                                        alt="choose"
+                                        className='w-100'
+                                    />
+                                </div>
                                 <p className="sectionText mb-4">
                                     Business insurance is crucial for protecting
                                     your company's assets and minimizing risk.
@@ -60,7 +67,10 @@ const Solutions = () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={6}>
+                        <Col
+                            lg={6}
+                            className="d-none d-lg-block"
+                        >
                             <Row>
                                 <Col lg={6}>
                                     <div className="chooseImage">

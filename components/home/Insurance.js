@@ -30,7 +30,7 @@ const Insurance = () => {
                       </Col>
                   </Row>
                   <Row>
-                      <Col lg={4}>
+                      <Col lg={4} md={6} className="mb-4">
                           <div className={styles.singleInsurance}>
                               <div className={styles.insuranceIcon}>
                                   <Image
@@ -49,7 +49,7 @@ const Insurance = () => {
                               </div>
                           </div>
                       </Col>
-                      <Col lg={4}>
+                      <Col lg={4} md={6} className="mb-4">
                           <div className={styles.singleInsurance}>
                               <div className={styles.insuranceIcon}>
                                   <Image
@@ -68,7 +68,7 @@ const Insurance = () => {
                               </div>
                           </div>
                       </Col>
-                      <Col lg={4}>
+                      <Col lg={4} md={6} className="mb-4">
                           <div className={styles.singleInsurance}>
                               <div className={styles.insuranceIcon}>
                                   <Image

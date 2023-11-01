@@ -46,7 +46,7 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 30px;
 }
 
 .footerAddress h3 {
@@ -246,6 +246,12 @@
     -o-border-radius: 50%;
 }
 
+.socialCollection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
 /* Responsive CSS Start */
 @media screen and (max-width: 1600px) {
 }
@@ -275,6 +281,24 @@
     .footerBottom {
         flex-direction: column;
         gap: 12px;
+    }
+
+    .socialCollection {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footerMenuList {
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .socialCollection li a {
+        width: 60px;
+        height: 60px;
     }
 }
 @media screen and (max-width: 480px) {

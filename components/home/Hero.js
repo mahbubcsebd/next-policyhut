@@ -24,8 +24,7 @@ function Hero() {
               <Container className={styles.heroContainer}>
                   <Row>
                       <Col
-                          md={12}
-                          lg={8}
+                          xxl={8}
                       >
                           <div className={styles.heroContent}>
                               <h1 className={styles.heroTitle}>
@@ -88,6 +87,7 @@ function Hero() {
                       <Col
                           md={12}
                           lg={4}
+                          className="d-none d-xxl-block"
                       >
                           <div className={styles.heroImage}>
                               <Image

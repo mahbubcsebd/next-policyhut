@@ -1,5 +1,6 @@
 "use client"
 
+import home from '@/public/icons/home.svg';
 import bannerBg from '@/public/images/banner-bg.svg';
 import bannerImg from '@/public/images/banner.png';
 import Image from 'next/image';
@@ -31,16 +32,17 @@ function Banner(props) {
                 <Container>
                     <div className={`${styles.bannerContent}`}>
                         <h2>{decodedPaths}</h2>
-                        <div>
-                            <Breadcrumb
-                                homeElement="Home"
-                                separator="/"
-                                containerClasses="next-breadcrumb-container"
-                                listClasses="next-breadcrumb-item"
-                                activeClasses="active"
-                                capitalizeLinks={true}
-                            />
-                        </div>
+                        <div className="d-flex gap-2 align-items-center">
+                            <Image src={home} alt='home'/>
+                                <Breadcrumb
+                                    homeElement="Home"
+                                    separator="/"
+                                    containerClasses="next-breadcrumb-container"
+                                    listClasses="next-breadcrumb-item"
+                                    activeClasses="active"
+                                    capitalizeLinks={true}
+                                />
+                            </div>
                     </div>
                 </Container>
             </div>

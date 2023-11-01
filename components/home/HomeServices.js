@@ -5,7 +5,7 @@ import services2 from "@/public/images/services-2.png";
 import services3 from "@/public/images/services-3.png";
 import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
-import styles from "./services.module.css";
+import styles from "./homeServices.module.css";
 
 const HomeServices = () => {
   return (

@@ -10,7 +10,7 @@ const ChooseUs = () => {
   return (
       <div
           id="chooseUs"
-          className="chooseUs section"
+          className="chooseUs section-pb"
       >
           <div className="chooseUsArea">
               <Container>
@@ -20,6 +20,13 @@ const ChooseUs = () => {
                               <h2 className="sectionTitle">
                                   The Insurance That Keeps You Ahead
                               </h2>
+                              <div className="chooseImage py-4 d-sm-none">
+                                  <Image
+                                      src={choose1}
+                                      alt="choose"
+                                      className="w-100"
+                                  />
+                              </div>
                               <p className="sectionText mb-4">
                                   we are committed to providing our customers
                                   with high-quality insurance products and
@@ -68,9 +75,12 @@ const ChooseUs = () => {
                               </ul>
                           </div>
                       </Col>
-                      <Col lg={6}>
+                      <Col
+                          lg={6}
+                          className="d-none d-sm-block"
+                      >
                           <Row>
-                              <Col lg={6}>
+                              <Col sm={6}>
                                   <div className="chooseImage">
                                       <Image
                                           src={choose1}
@@ -78,7 +88,7 @@ const ChooseUs = () => {
                                       />
                                   </div>
                               </Col>
-                              <Col lg={6}>
+                              <Col sm={6}>
                                   <div className="chooseImage">
                                       <Image
                                           src={choose2}

@@ -20,7 +20,9 @@ function Footer() {
                 <Container>
                     <Row className={`${styles.footerMiddle}`}>
                         <Col
-                            lg={3}
+                            xxl={3}
+                            lg={4}
+                            md={6}
                             className="mb-5"
                         >
                             <div className={`${styles.footerContent}`}>
@@ -45,8 +47,8 @@ function Footer() {
                             </div>
                         </Col>
                         <Col
-                            lg={6}
                             xxl={4}
+                            md={6}
                             className="mb-5"
                         >
                             <div className={`${styles.footerMenu}`}>
@@ -92,8 +94,10 @@ function Footer() {
                             </div>
                         </Col>
                         <Col
-                            lg={6}
                             xxl={2}
+                            xl={4}
+                            sm={6}
+                            className="mb-5"
                         >
                             <div className={`${styles.footerMenu}`}>
                                 <h2 className={`${styles.menuCategory}`}>
@@ -119,16 +123,13 @@ function Footer() {
                             </div>
                         </Col>
                         <Col
-                            lg={6}
-                            xxl={2}
+                            sm={2}
                         >
                             <div className={`${styles.footerMenu}`}>
                                 <h2 className={`${styles.menuCategory}`}>
                                     Social
                                 </h2>
-                                <ul
-                                    className={`${styles.socialCollection} column-2`}
-                                >
+                                <ul className={`${styles.socialCollection}`}>
                                     <li>
                                         <Link href="/">
                                             <Image

@@ -12,7 +12,7 @@ const BlogTwoCol = () => {
   return (
       <div
           id="blog"
-          className="blog section-pb"
+          className="blog"
       >
           <div className={`${styles.blogArea}`}>
               <Container>

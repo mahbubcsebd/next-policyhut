@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Policyhut - Next JS Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="assets/css/documenter_style.css" rel="stylesheet" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <style>
+        html,
+        body {
+            background-color: #ffffff;
+            color: #383838;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #383838;
+        }
+
+        section table {
+            background-color: #ffffff;
+        }
+
+        ::-moz-selection {
+            background: #444444;
+            color: #dddddd;
+        }
+
+        ::selection {
+            background: #444444;
+            color: #dddddd;
+        }
+
+        a,
+        a:hover,
+        a:active {
+            color: #0000ff;
+        }
+
+        hr {
+            border-top: 1px solid #ebebeb;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        div.navbar-inner,
+        .navbar .nav li ul {
+            background: #dddddd;
+            color: #222222;
+        }
+
+        a.btn-navbar {
+            background: #dddddd;
+            color: #222222;
+        }
+
+        .navbar .nav li a {
+            color: #222222;
+            text-shadow: 1px 1px 0px #eeeeee;
+        }
+
+        .navbar .nav li a:hover,
+        .navbar .nav li.active a {
+            text-shadow: none;
+        }
+
+        div.navbar-inner ul {}
+
+        .navbar .nav>li a {
+            color: #444444;
+        }
+
+        .navbar .nav>li a:hover,
+        a.btn-navbar:hover {
+            background: #444444;
+            color: #dddddd;
+        }
+
+        .navbar .nav .active>a,
+        .navbar .nav .active>a:hover,
+        a.btn-navbar:active {
+            background-color: #444444;
+            color: #dddddd;
+        }
+
+        .navbar .nav li ul li a:hover {
+            background: #444444;
+            color: #dddddd;
+        }
+
+        .navbar .nav li ul li a:active {
+            background: #444444;
+            color: #dddddd;
+        }
+
+        .btn-primary {
+            background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+            background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+            background-image: -webkit-gradient(linear,
+                    0 0,
+                    0 0088CC%,
+                    from(#dddddd),
+                    to(#0044cc));
+            background-image: -webkit-linear-gradient(top,
+                    #0088cc,
+                    #0044cc);
+            background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+            background-image: linear-gradient(top, #0088cc, #0044cc);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+            border-color: #0044cc #0044cc #bfbfbf;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:active,
+        .btn-primary.active,
+        .btn-primary.disabled,
+        .btn-primary[disabled] {
+            background-color: #0044cc;
+        }
+
+        #documenter_copyright {
+            display: block !important;
+            visibility: visible !important;
+        }
+
+        #theme_options2 img {
+            border: 1px solid #eee;
+            margin: 10px 0;
+            max-width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body class="documentor-project" data-spy="scroll" id="top">
+    <!-- Documentation Navbar -->
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">Policyhut - Modern Insurance policy service Next JS
+                    Template</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li>
+                            <a href="#documenter_content" title="Theme Installation">Overview</a>
+                        </li>
+                        <li>
+                            <a href="#started" title="Getting started">Getting Started</a>
+                        </li>
+                        <li>
+                            <a href="#structure" title="Structure">Folder Structure</a>
+                        </li>
+                        <li>
+                            <a href="#customization" title="Customize">Customization</a>
+                        </li>
+                        <li>
+                            <a href="#layout" title="Customize">Layout/Component</a>
+                        </li>
+                        <li>
+                            <a href="#dependencies" title="Dependencies">Dependencies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Navbar -->
+
+    <!-- Main Container Beginning -->
+
+    <div class="container" id="documenter_content">
+        <div id="documenter-cover">
+            <div class="masthead">
+                <h1 style="text-align: center">
+                    Policyhut - Modern Insurance policy service Next JS
+                    Template
+                </h1>
+                <p class="download-info">
+                    <a href="mailto:andimpex@gmail.com" class="btn btn-large">24/7 Support: Mail us devsarray@gmail.com
+                    </a>
+                </p>
+            </div>
+            <!-- masthead -->
+            <div id="intro">
+                <p class="highlight hero-unit">
+                    Thank you for purchasing our template. If you have any
+                    questions that are beyond the scope of this help file,
+                    please feel free to open a new ticket at our
+                    <a href="https://andit.co/contact/" target="_blank">support forum</a>
+                </p>
+                <h4>
+                    <b>IMPORTANT : It's built with Next Js and It's not a
+                        regular HTML Template.</b>
+                </h4>
+            </div>
+            <!-- intro -->
+        </div>
+
+        <section id="started">
+            <div class="page-header">
+                <h3>Getting Started</h3>
+                <hr class="notop" />
+            </div>
+            <div class="card">
+                <div class="card-header">Installation</div>
+                <div class="card-body">
+                    <h5>Prerequisites:</h5>
+                    <p>
+                        Before you begin, make sure your development
+                        environment includes <b>Node</b> and an
+                        <b>npm package manager.</b>
+                    </p>
+                    <ul>
+                        <li>
+                            <b>Node.js and NPM :</b> You can download
+                            Node.js from
+                            <a href="https://nodejs.org">nodejs.org.</a> NPM
+                            comes bundled with Node.js.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="card">
+                <div class="card-header">
+                    Vue setup
+                </div>
+                <div class="card-body">
+                    <h5>Installing Vue CLI:</h5>
+                    <p><b>Install the Vue CLI globally.</b> <br>
+                        To install the CLI using npm, open a terminal/console window and enter the following command:
+                    </p>
+                    <ul>
+                        <li><code>npm install -g @vue/cli </code></li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="card">
+                <div class="card-header">Install NPM Packages</div>
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            <b>NPM :</b> You must have to
+                            <code>npm install</code> packages. You can do
+                            this by running npm install from the root of
+                            your project to install all the necessary
+                            dependencies.
+                        </li>
+                        <li>
+                            First unzip <code>Main-File.zip</code> you will
+                            find two folders including
+                            <code>policyhut-nextjs</code> (this is your root
+                            folder). Open this folder with
+                            <a href="https://code.visualstudio.com/download" target="_blank">VS Code</a>
+                            (or any other you like). And follow step below..
+                        </li>
+                        <li>
+                            <b>NPM :</b> You must have to run
+                            <code>npm install</code> packages. You can do
+                            this by running npm install from the root of
+                            your project to install all the necessary
+                            dependencies.
+                        </li>
+                        <li>
+                            <b>NPM :</b> You can open VS Code built in
+                            terminal and run <code>npm install</code>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Development server</div>
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            Run <code>npm run dev</code> for a dev server.
+                            Navigate to http://localhost:3000/ . The app
+                            will automatically reload if you change any of
+                            the source files.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Build for Production Ready for live server
+                </div>
+                <div class="card-body">
+                    <p>
+                        Build you application for host on server using below
+                        command: <br />
+                        <code> npm run build</code>
+                    </p>
+                    <ul>
+                        <li>
+                            In your editor terminal Run
+                            <code>npm run build</code> to build the project.
+                            The build artifacts will be stored in the dist/
+                            directory. Now you can upload the dist/ folder
+                            into your live hosting server's public/
+                            directory
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="structure">
+            <div class="page-header">
+                <h3>Folder Structure</h3>
+                <hr class="notop" />
+            </div>
+            <div class="card">
+                <div class="card-body" style="margin-bottom: 16px;">
+                    <p><code> App Folder Structure</code></p>
+                    <img src="assets/img/app.png" alt="folder structure" />
+                </div>
+                <div class="card-body">
+                    <p><code> Base Folder Structure</code></p>
+                    <img src="assets/img/folder-structure.png" alt="folder structure" />
+
+                    <p>
+                        <b>Help</b>: For detailed explanation on how things
+                        work, check out
+                    </p>
+                    <ul>
+                        <li>
+                            <b>How React js works</b>:
+                            <a target="_blank" href="https://nextjs.org/docs">next.js</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="customization">
+            <div class="page-header">
+                <h3>Customization</h3>
+                <hr class="notop" />
+            </div>
+            <div class="card">
+                <div class="card-header">How to change Logo ?</div>
+                <div class="card-body">
+                    <p>
+                        To change <b>Logo</b> please open
+                        <code>public/icons/logo.svg</code> and replace your Logo
+                        here.
+                    </p>
+                    <img src="assets/img/change-logo.png" alt="logo change" />
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">How to change Copyright ?</div>
+                <div class="card-body">
+                    <p>
+                        To change <b>Copyright</b> please open Footer
+                        component and edit as you wish.
+                    </p>
+                    <img src="assets/img/copyright.png" alt="a" />
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">How to change Menu/ Navbar ?</div>
+                <div class="card-body">
+                    <p>
+                        To change <b>Menu Item</b> and
+                        <b>Category List Menu Item</b> please open these
+                        component and edit as you wish.
+                    </p>
+                    <img src="assets/img/menu.png" alt="a" />
+                </div>
+            </div>
+        </section>
+
+        <section id="layout">
+            <div class="page-header">
+                <h3>Layout / Component Structure</h3>
+                <hr class="notop" />
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5>Full Project's Item Box Components</h5>
+                    <img src="assets/img/item-box.png" alt="com" />
+                </div>
+            </div>
+        </section>
+
+        <section id="dependencies">
+            <div class="page-header">
+                <h3>Dependencies</h3>
+                <hr class="notop" />
+            </div>
+            <div class="card">
+                <div class="card-header">Dependencies</div>
+                <div class="card-body">
+                    <ul>
+                        <li><b>next</b> Doc: https://nextjs.org/docs</li>
+                        <li>
+                            <b>react-bootstrap</b> Doc:
+                            https://react-bootstrap.github.io/getting-started/introduction
+                        </li>
+                        <li>
+                            <b>react-router-dom</b> Doc:
+                            https://reactrouter.com/en/main
+                        </li>
+                        <li>
+                            <b>react-icons</b> Doc:
+                            https://react-icons.github.io/react-icons
+                        </li>
+                        <li>
+                            <b>slick-carousel</b> Doc:
+                            https://www.npmjs.com/package/react-slick
+                        </li>
+                        <li>
+                            <b>react-countup</b> Doc:
+                            https://www.npmjs.com/package/react-countup
+                        </li>
+                        <li>
+                            <b>react-countdown</b> Doc:
+                            https://www.npmjs.com/package/react-countdown
+                        </li>
+                        <br />
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="thanks">
+            <div class="page-header">
+                <h3>Thanks</h3>
+                <hr class="notop" />
+            </div>
+            <h4 id="thanks_span_style">
+                <span style="
+                            margin: 0px;
+                            padding: 0px;
+                            border: 0px;
+                            outline: 0px;
+                            font-weight: 700;
+                            font-style: inherit;
+                            font-family: inherit;
+                            vertical-align: baseline;
+                        ">Once again thank you for purchasing one of our
+                    Templates</span>
+            </h4>
+            <h2 style="
+                        margin: 0px 0px 18px;
+                        padding: 0px;
+                        border: 0px;
+                        outline: 0px;
+                        font-weight: 100;
+                        font-size: 20px;
+                        font-family: Arial, verdana, arial, sans-serif;
+                        vertical-align: baseline;
+                        color: rgb(56, 56, 56);
+                    ">
+                Best Regards
+            </h2>
+            <h3 style="
+                        margin: 18px 0px 0px;
+                        padding: 0px;
+                        border: 0px;
+                        outline: 0px;
+                        font-weight: 100;
+                        font-size: 26px;
+                        font-family: Arial, verdana, arial, sans-serif;
+                        vertical-align: baseline;
+                        color: rgb(56, 56, 56);
+                    ">
+                Devsarray
+            </h3>
+        </section>
+        <hr />
+        <footer>
+            <p>
+                Copyright Devsarray 2023 made with the
+                <a href="#">Documenter v1.0</a>
+            </p>
+        </footer>
+    </div>
+    <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+        document.createElement('section');
+        var duration = '500',
+            easing = 'swing';
+    </script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap-min.js"></script>
+</body>
+
+</html>

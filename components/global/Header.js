@@ -20,8 +20,13 @@ function Header() {
         },
         {
             id: 2,
-            name: 'services',
+            name: 'service',
             path: '/services',
+        },
+        {
+            id: 3,
+            name: 'blog',
+            path: '/blog',
         },
         {
             id: 3,
@@ -46,8 +51,8 @@ function Header() {
     const subLinks = [
         {
             id: 1,
-            name: 'blog',
-            path: '/blog',
+            name: 'blog with sidebar',
+            path: '/blogs',
         },
         {
             id: 2,
@@ -56,83 +61,132 @@ function Header() {
         },
         {
             id: 3,
-            name: 'partner',
-            path: '/partner',
-        },
-        {
-            id: 4,
-            name: 'quote',
-            path: '/quote',
-        },
-        {
-            id: 5,
-            name: 'service-process',
-            path: '/service-process',
-        },
-        {
-            id: 6,
             name: 'team',
             path: '/team',
         },
         {
-            id: 7,
+            id: 4,
+            name: 'pricing',
+            path: '/pricing',
+        },
+        {
+            id: 5,
             name: 'testimonials',
             path: '/testimonials',
         },
+        {
+            id: 6,
+            name: 'insurance details',
+            path: '/insurance-details',
+        },
+        {
+            id: 7,
+            name: 'insurance update',
+            path: '/insurance-update',
+        },
+        {
+            id: 8,
+            name: 'payment',
+            path: '/payment',
+        },
+        {
+            id: 9,
+            name: 'payment information',
+            path: '/payment-information',
+        }
     ];
     return (
         <>
-            <header id="header" className="header header-1">
-                <Navbar expand="lg" className="">
+            <header
+                id="header"
+                className="header header-1"
+            >
+                <Navbar
+                    expand="lg"
+                    className=""
+                >
                     <Container>
                         <Navbar.Brand>
                             <Link href="/">
-                                <Image src={logo} alt="Landscape picture" />
+                                <Image
+                                    src={logo}
+                                    alt="Landscape picture"
+                                />
                             </Link>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="ms-auto">
-                                <NavDropdown title="Home" id="basic-nav-dropdown">
-                                    {homeLinks.map((homeLink) => (
-                                        <NavDropdown.Item key={homeLink.id}>
-                                            <Link
-                                                className={`${
-                                                    homeLink.path === path ? 'active' : ''
-                                                } nav-link`}
-                                                href={homeLink.path}
-                                            >
-                                                {homeLink.name}
-                                            </Link>
-                                        </NavDropdown.Item>
-                                    ))}
-                                </NavDropdown>
-                                {navLinks.map((navLink) => (
-                                    <Link
-                                        className={`${
-                                            navLink.path === path ? 'active' : ''
-                                        } nav-link`}
-                                        href={navLink.path}
-                                        key={navLink.id}
+                            <div className="header-menu-wrapper ms-auto">
+                                <Nav className='ms-auto'>
+                                    <NavDropdown
+                                        title="Home"
+                                        id="basic-nav-dropdown"
                                     >
-                                        {navLink.name}
-                                    </Link>
-                                ))}
-                                <NavDropdown title="Pages" id="basic-nav-dropdown">
-                                    {subLinks.map((subLink) => (
-                                        <NavDropdown.Item key={subLink.id}>
-                                            <Link
-                                                className={`${
-                                                    subLink.path === path ? 'active' : ''
-                                                } nav-link`}
-                                                href={subLink.path}
-                                            >
-                                                {subLink.name}
-                                            </Link>
-                                        </NavDropdown.Item>
+                                        {homeLinks.map((homeLink) => (
+                                            <NavDropdown.Item key={homeLink.id}>
+                                                <Link
+                                                    className={`${
+                                                        homeLink.path === path
+                                                            ? 'active'
+                                                            : ''
+                                                    } nav-link`}
+                                                    href={homeLink.path}
+                                                >
+                                                    {homeLink.name}
+                                                </Link>
+                                            </NavDropdown.Item>
+                                        ))}
+                                    </NavDropdown>
+                                    {navLinks.map((navLink) => (
+                                        <Link
+                                            className={`${
+                                                navLink.path === path
+                                                    ? 'active'
+                                                    : ''
+                                            } nav-link`}
+                                            href={navLink.path}
+                                            key={navLink.id}
+                                        >
+                                            {navLink.name}
+                                        </Link>
                                     ))}
-                                </NavDropdown>
-                            </Nav>
+                                    <NavDropdown
+                                        title="Pages"
+                                        id="basic-nav-dropdown"
+                                    >
+                                        {subLinks.map((subLink) => (
+                                            <NavDropdown.Item key={subLink.id}>
+                                                <Link
+                                                    className={`${
+                                                        subLink.path === path
+                                                            ? 'active'
+                                                            : ''
+                                                    } nav-link`}
+                                                    href={subLink.path}
+                                                >
+                                                    {subLink.name}
+                                                </Link>
+                                            </NavDropdown.Item>
+                                        ))}
+                                    </NavDropdown>
+                                </Nav>
+                                <div className='m-hide'>
+                                    <div className="navBtnBox">
+                                        <Link
+                                            href="#"
+                                            className="btnBordered"
+                                        >
+                                            Sign In
+                                        </Link>
+                                        <Link
+                                            href="#"
+                                            className="btnBlue"
+                                        >
+                                            SignUp
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>

@@ -19,7 +19,7 @@ function CounterUp() {
                             xl={3}
                             className="mb-8"
                         >
-                            <div className={`${styles.singleCounter}`}>
+                            <div className={`${styles.singleCounter} mt-4 mt-md-0`}>
                                 <div className={`${styles.counterNumber}`}>
                                     <CountUp
                                         end={2.9}

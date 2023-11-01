@@ -67,11 +67,16 @@
         font-size: 60px;
         line-height: 85px;
     }
+
+    .singleCounter {
+        height: 200px;
+        padding-top: 0;
+    }
 }
 @media screen and (max-width: 575px) {
-    .counterCategory {
+    /* .counterCategory {
         padding: 40px 20px !important;
-    }
+    } */
 }
 @media screen and (max-width: 480px) {
 }

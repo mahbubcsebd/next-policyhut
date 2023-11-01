@@ -19,7 +19,7 @@ const TopBar = () => {
                       </p>
                   </div>
                   <div className={styles.topBarRight}>
-                      <div>
+                      <div className={styles.emailAddress}>
                           <p className={styles.email}><IoMailOpenOutline/> example@gmail.com</p>
                       </div>
                       <div className={styles.topBarSocial}>

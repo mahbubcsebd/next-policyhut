@@ -28,7 +28,7 @@ const InsurancePlan = () => {
   return (
       <div
           id="insurancePlan"
-          className="insurancePlan section bgLight"
+          className="insurancePlan section-pb bgLight"
       >
           <div className="insurancePlanArea">
               <Container>
@@ -42,7 +42,7 @@ const InsurancePlan = () => {
                   <Row className={styles.planWrapper}>
                       <Col
                           lg={4}
-                          className="p-0"
+                          className="p-lg-0"
                       >
                           <div className={styles.singlePlan}>
                               <div>
@@ -75,7 +75,7 @@ const InsurancePlan = () => {
                       </Col>
                       <Col
                           lg={4}
-                          className="p-0"
+                          className="p-lg-0"
                       >
                           <div className={styles.singlePlan}>
                               <div>
@@ -108,7 +108,7 @@ const InsurancePlan = () => {
                       </Col>
                       <Col
                           lg={4}
-                          className="p-0"
+                          className="p-lg-0"
                       >
                           <div className={styles.singlePlan}>
                               <div>
@@ -141,7 +141,7 @@ const InsurancePlan = () => {
                       </Col>
                       <Col
                           lg={4}
-                          className="p-0"
+                          className="p-lg-0"
                       >
                           <div className={styles.singlePlan}>
                               <div>
@@ -174,7 +174,7 @@ const InsurancePlan = () => {
                       </Col>
                       <Col
                           lg={4}
-                          className="p-0"
+                          className="p-lg-0"
                       >
                           <div className={styles.singlePlan}>
                               <div>
@@ -207,7 +207,7 @@ const InsurancePlan = () => {
                       </Col>
                       <Col
                           lg={4}
-                          className="p-0"
+                          className="p-lg-0"
                       >
                           <div className={styles.singlePlan}>
                               <div>
@@ -240,7 +240,7 @@ const InsurancePlan = () => {
                       </Col>
                       <Col
                           lg={4}
-                          className="p-0"
+                          className="p-lg-0"
                       >
                           <div className={styles.singlePlan}>
                               <div>
@@ -273,7 +273,7 @@ const InsurancePlan = () => {
                       </Col>
                       <Col
                           lg={4}
-                          className="p-0"
+                          className="p-lg-0"
                       >
                           <div className={styles.singlePlan}>
                               <div>
@@ -306,7 +306,7 @@ const InsurancePlan = () => {
                       </Col>
                       <Col
                           lg={4}
-                          className="p-0"
+                          className="p-lg-0"
                       >
                           <div
                               className={`${styles.singlePlanLast}`}

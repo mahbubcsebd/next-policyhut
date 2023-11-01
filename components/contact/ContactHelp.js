@@ -7,7 +7,7 @@ import styles from "./contactHelp.module.css";
 
 const ContactHelp = () => {
   return (
-      <div className="">
+      <div className="contacthelpArea">
           <div className="sectionContent">
               <span className="sectionTitleSpan">Get In Touch</span>
               <h2 className="sectionTitle">
@@ -20,7 +20,7 @@ const ContactHelp = () => {
                   hesitate to contact us. Here are the different ways you can
                   get in touch with us:
               </p>
-              <Row>
+              <Row className="align-items-stretch">
                   <Col
                       md={6}
                       className="mb-4"

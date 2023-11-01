@@ -11,7 +11,7 @@ const Services = () => {
   return (
       <div
           id="services"
-          className="services section bgLight"
+          className="services section-pb"
       >
           <div className="servicesArea">
               <Container>
@@ -23,9 +23,9 @@ const Services = () => {
                   <Row className="align-items-stretch">
                       {services.map((service, index) => (
                           <Col
-                              lg={3}
+                              xxl={3}
+                              xl={4}
                               md={6}
-                              sm={12}
                               className="mb-4"
                               key={index}
                           >

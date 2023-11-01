@@ -1,5 +1,6 @@
 "use client";
 
+import formBg from "@/public/images/form-bg.svg";
 import formImg from "@/public/images/form-left-img.png";
 import Image from "next/image";
 import { useState } from "react";
@@ -18,9 +19,19 @@ const InsuranceForm = () => {
           id="insuranceForm"
           className="insuranceForm section-pb"
       >
+          <Image
+              src={formBg}
+              alt="form-bg"
+              className="form-bg-img"
+          />
+          <Image
+              src={formImg}
+              alt="insurance form"
+              className="form-img"
+          />
           <div className="insuranceFormArea">
               <Container>
-                  <Row className="align-items-center">
+                  <Row>
                       <Col
                           lg={6}
                           md={12}
@@ -131,26 +142,15 @@ const InsuranceForm = () => {
                                               </div>
                                           </Col>
                                       </Row>
-                                      <button type="submit"
+                                      <button
+                                          type="submit"
                                           className="btnBlue submitBtn mt-8"
                                       >
-                                            Get a Quote
+                                          Get a Quote
                                       </button>
                                   </div>
                               </Form>
                           </div>
-                      </Col>
-                      <Col
-                          lg={6}
-                          md={12}
-                          sm={12}
-                      >
-                            <div className="sectionImage">
-                                <Image
-                                    src={formImg}
-                                    alt="insurance form"
-                                />
-                            </div>
                       </Col>
                   </Row>
               </Container>

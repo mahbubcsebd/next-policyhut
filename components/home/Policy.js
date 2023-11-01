@@ -15,12 +15,13 @@ const Policy = () => {
       >
           <div className="policyArea">
               <Container>
-                  <Row>
+                  <Row className="align-items-center">
                       <Col lg={6}>
-                          <div className="sectionImage">
+                          <div className="sectionImage d-none d-lg-block">
                               <Image
                                   src={policyImg}
                                   alt="policy image"
+                                  className="policyImg"
                               />
                           </div>
                       </Col>
@@ -29,6 +30,13 @@ const Policy = () => {
                               <h2 className="sectionTitle">
                                   We provide the best insurance policy
                               </h2>
+                              <div className="sectionImage pb-4 d-lg-none">
+                                  <Image
+                                      src={policyImg}
+                                      alt="policy image"
+                                      className="policyImg"
+                                  />
+                              </div>
                               <p className="sectionText mb-2">
                                   we are committed to providing our customers
                                   with high-quality insurance products and
@@ -64,10 +72,13 @@ const Policy = () => {
                                       <p>Professional Team</p>
                                   </div>
                                   <div className={styles.singleCustomer}>
-                                      <h2><CountUp
+                                      <h2>
+                                          <CountUp
                                               start={0}
                                               end={24}
-                                          />K</h2>
+                                          />
+                                          K
+                                      </h2>
                                       <p>Satisfied Customers</p>
                                   </div>
                               </div>

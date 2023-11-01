@@ -9,12 +9,15 @@ const AboutPolicy = () => {
     return (
         <div
             id="policy"
-            className="policy section"
+            className="policy section-pb"
         >
             <div className="policyArea">
                 <Container>
                     <Row>
-                        <Col lg={6}>
+                        <Col
+                            lg={6}
+                            className="d-none d-lg-block"
+                        >
                             <div className="sectionImage">
                                 <Image
                                     src={policyImg}
@@ -27,6 +30,12 @@ const AboutPolicy = () => {
                                 <h2 className="sectionTitle">
                                     We provide the best insurance policy
                                 </h2>
+                                <div className="sectionImage pb-4 d-lg-none">
+                                    <Image
+                                        src={policyImg}
+                                        alt="policy image"
+                                    />
+                                </div>
                                 <p className="sectionText mb-2">
                                     Our company was founded with the goal of
                                     providing affordable, reliable insurance

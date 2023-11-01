@@ -1,0 +1,43 @@
+﻿<h3>Policyhut - Modern insurance policy service Next Js Template</h3>
+
+Policyhut is the perfect solution for any type of insurance company. This HTML template is specially created for the insurance, car insurance, health insurance, life insurance, insurance agency, agents, finance, loan and all insurance company related any business website.
+
+
+<h3>Features:</h3>
+<ul>
+<li>Awesome & Creative Design</li>
+<li>2 Beautiful Home Demos</li>
+<li>Free Google Fonts</li>
+<li>SEO Friendly Code</li>
+<li>Based on Bootstrap Grid Layout</li>
+<li>Fully Responsive Design</li>
+<li>Cross browser Compatible with Edge, Firefox, Safari, Chrome</li>
+<li>Great Support 24/7</li>
+<li>Well Documented</li>
+<li>and much more…</li>
+</ul>
+
+<h4>** Images are not Included for download package</h4>
+
+<h3>Files included:</h3>
+<ul>
+<li>Next Js Template Files</li>
+<li>Proper Documentation</li>
+</ul>
+
+
+<h3>Font Used:</h3>
+<ul>
+<li><a href="https://fonts.google.com/specimen/Manrope" target="_blank">Manrope</a></li>
+</ul>
+
+<h3>Icon Used:</h3>
+<ul>
+<li><a href="https://react-icons.github.io/react-icons/">React Icons</a></li>
+</ul>
+
+Please Note: Images in the main file are replaced by placeholders, all images are used for demo purpose only. Don't worry about elements, it is already in your main file.
+
+<h3>Support:</h3>
+
+If you need any help to use the file or need special customizing please feel free to contact me via my Themeforest profile. If you have a moment, please rate this item, I'll appreciate it very much!.... Thank you.

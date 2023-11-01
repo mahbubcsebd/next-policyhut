@@ -7,16 +7,16 @@ const page = () => {
   return (
       <div
           id="blogWithSidebar"
-          className="blogWithSidebar"
+          className="blogWithSidebar section-pb"
       >
           <div className="blogWithSidebarArea">
           <Banner/>
             <Container>
                 <Row>
-                    <Col md={8}>
+                    <Col lg={8}>
                         <BlogTwoCol/>
                     </Col>
-                    <Col md={4}>
+                    <Col lg={4}>
                         <BlogSidebar/>
                     </Col>
                 </Row>
