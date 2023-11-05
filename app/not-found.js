@@ -7,7 +7,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Col, Container, Row } from 'react-bootstrap';
 import "./globals.css";
-import styles from './notFound.module.css';
 
 
 function PageNotFound() {
@@ -25,16 +24,16 @@ function PageNotFound() {
                     <Container>
                         <Row className="justify-content-center">
                             <Col lg={6}>
-                                <div className={styles.notFoundContent}>
+                                <div className="notFoundContent">
                                     <Image
                                         src={error}
                                         alt="404"
                                     />
 
-                                    <h2 className={styles.notFoundTitle}>
+                                    <h2 className="notFoundTitle">
                                         404 Page Not Found
                                     </h2>
-                                    <p className={styles.notFoundText}>
+                                    <p className="notFoundText">
                                         This page is incidentally inaccessible
                                         because of support. We will back very
                                         before long much obliged for your
