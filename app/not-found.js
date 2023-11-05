@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Col, Container, Row } from 'react-bootstrap';
+import "./globals.css";
 import styles from './notFound.module.css';
 
 
