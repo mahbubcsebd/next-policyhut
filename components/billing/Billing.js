@@ -17,8 +17,8 @@ const Billing = () => {
           <div className="billingArea">
               <Container>
                   <Row>
-                      <div class="sectionTopTitleCenter">
-                          <h2 class="sectionTitle">Ways to pay</h2>
+                      <div className="sectionTopTitleCenter">
+                          <h2 className="sectionTitle">Ways to pay</h2>
                       </div>
                   </Row>
                   <Row>

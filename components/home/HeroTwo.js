@@ -1,9 +1,4 @@
-import client1 from '@/public/images/client-1.png';
-import client2 from '@/public/images/client-2.png';
-import client3 from '@/public/images/client-3.png';
-import client4 from '@/public/images/client-4.png';
-import heroImg from '@/public/images/hero-1.png';
-import heroBg from '@/public/images/hero-left-bg.png';
+import heroBgTwo from '@/public/images/hero-2-bg.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -13,11 +8,11 @@ function HeroTwo() {
     return (
         <div
             id="hero"
-            className="hero"
+            className={`${styles.hero} ${styles.heroTwo}`}
         >
             <div className={styles.heroArea}>
                 <Image
-                    src={heroBg}
+                    src={heroBgTwo}
                     alt="hero-bg"
                     className={styles.heroBg}
                 />
@@ -25,12 +20,11 @@ function HeroTwo() {
                     <Row>
                         <Col
                             md={12}
-                            lg={8}
+                            lg={6}
                         >
                             <div className={styles.heroContent}>
                                 <h1 className={styles.heroTitle}>
-                                    Insurance Coverage for Every Aspect of Your
-                                    Life
+                                    Insurance for the better family life
                                 </h1>
                                 <p className={styles.heroText}>
                                     We offers a large range of premium insurance
@@ -46,54 +40,7 @@ function HeroTwo() {
                                     >
                                         Let&apos;s Get Started
                                     </Link>
-                                    <Link
-                                        className="btnWhite"
-                                        href="#"
-                                    >
-                                        Get A Quote
-                                    </Link>
                                 </div>
-
-                                <div className={styles.heroMember}>
-                                    <p>20K+ People already trusted us.</p>
-                                    <ul>
-                                        <li>
-                                            <Image
-                                                src={client1}
-                                                alt="member"
-                                            />
-                                        </li>
-                                        <li>
-                                            <Image
-                                                src={client2}
-                                                alt="member"
-                                            />
-                                        </li>
-                                        <li>
-                                            <Image
-                                                src={client3}
-                                                alt="member"
-                                            />
-                                        </li>
-                                        <li>
-                                            <Image
-                                                src={client4}
-                                                alt="member"
-                                            />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col
-                            md={12}
-                            lg={4}
-                        >
-                            <div className={styles.heroImage}>
-                                <Image
-                                    src={heroImg}
-                                    alt="hero image"
-                                />
                             </div>
                         </Col>
                     </Row>

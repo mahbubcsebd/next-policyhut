@@ -17,7 +17,7 @@ const InsuranceForm = () => {
   return (
       <div
           id="insuranceForm"
-          className="insuranceForm section-pb"
+          className="insuranceForm section"
       >
           <Image
               src={formBg}

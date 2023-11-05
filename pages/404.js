@@ -1,4 +1,4 @@
-import Header from '@/components/Header';
+import Header from '@/components/global/Header';
 import error from '@/public/images/404.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';

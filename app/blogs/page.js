@@ -3,6 +3,11 @@ import BlogTwoCol from '@/components/blog/BlogTwoCol';
 import Banner from '@/components/global/Banner';
 import { Col, Container, Row } from 'react-bootstrap';
 
+
+export const metadata = {
+    title: 'Policyhut | Blog',
+};
+
 const page = () => {
   return (
       <div

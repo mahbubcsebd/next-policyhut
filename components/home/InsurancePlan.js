@@ -28,7 +28,7 @@ const InsurancePlan = () => {
   return (
       <div
           id="insurancePlan"
-          className="insurancePlan section-pb bgLight"
+          className="insurancePlan section bgLight"
       >
           <div className="insurancePlanArea">
               <Container>

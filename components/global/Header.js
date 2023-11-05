@@ -29,7 +29,7 @@ function Header() {
             path: '/blog',
         },
         {
-            id: 3,
+            id: 4,
             name: 'contact',
             path: '/contact',
         },

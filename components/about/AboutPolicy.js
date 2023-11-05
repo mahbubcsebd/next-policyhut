@@ -9,7 +9,7 @@ const AboutPolicy = () => {
     return (
         <div
             id="policy"
-            className="policy section-pb"
+            className="policy section"
         >
             <div className="policyArea">
                 <Container>

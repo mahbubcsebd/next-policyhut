@@ -10,7 +10,7 @@ const ChooseUs = () => {
   return (
       <div
           id="chooseUs"
-          className="chooseUs section-pb"
+          className="chooseUs section"
       >
           <div className="chooseUsArea">
               <Container>

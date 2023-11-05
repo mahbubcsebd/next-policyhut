@@ -13,12 +13,12 @@ function HomeBlog() {
     return (
         <div
             id="blog"
-            className="blog section-pb"
+            className="blog section"
         >
             <div className={`${styles.blogArea}`}>
                 <Container>
-                    <div class="sectionTopTitleBetween">
-                            <h2 class="sectionTitle">Read Latest Articles</h2>
+                    <div className="sectionTopTitleBetween">
+                            <h2 className="sectionTitle">Read Latest Articles</h2>
                             <Link
                                 href="/blog"
                                 className="btnBordered d-none d-md-block"

@@ -9,6 +9,10 @@ import InsurancePlan from "@/components/home/InsurancePlan";
 import Services from "@/components/services/Services";
 import Team from "@/components/team/Team";
 
+export const metadata = {
+    title: 'Policyhut | Home',
+};
+
 const page = () => {
   return (
       <div>
@@ -18,11 +22,10 @@ const page = () => {
           <Services />
           <ChooseUs />
           <CounterUp />
-          <InsuranceForm/>
           <Team/>
           <InsurancePlan/>
-          {/* <Testimonial/> */}
           <CustomerFeedback/>
+          <InsuranceForm/>
       </div>
   );
 }

@@ -1,5 +1,3 @@
-'use client';
-
 import Faq from '@/components/faq/Faq';
 import Banner from '@/components/global/Banner';
 import InsuranceForm from '@/components/home/InsuranceForm';
@@ -7,16 +5,12 @@ import Coverage from '@/components/services/Coverage';
 import InsuranceCost from '@/components/services/InsuranceCost';
 import InsuranceType from '@/components/services/InsuranceType';
 import ServicesDetails from '@/components/services/ServicesDetails';
-import { useRouter } from 'next/navigation';
+
+export const metadata = {
+    title: 'Policyhut | Service Details',
+};
 
 const ServiceDetailsPage = () => {
-    const router = useRouter();
-
-    const breadcrumbItems = [
-        { text: 'Home', url: '/' },
-        { text: 'Service', url: '/service' },
-        { text: 'Life Insurance', url: router.asPath },
-    ];
 
     return (
         <div

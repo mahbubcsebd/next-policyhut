@@ -73,6 +73,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .bannerContent h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
 }
 
 @media screen and (max-width: 575px) {

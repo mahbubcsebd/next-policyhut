@@ -1,7 +1,7 @@
 "use client"
 
 import home from '@/public/icons/home.svg';
-import bannerBg from '@/public/images/banner-bg.svg';
+import bannerBg from '@/public/images/banner-bg.jpg';
 import bannerImg from '@/public/images/banner.png';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
