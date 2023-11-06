@@ -31,7 +31,7 @@ function PageNotFound() {
                                     />
 
                                     <h2 className="notFoundTitle">
-                                        404 Page Not Found
+                                        404 Page Not Founds
                                     </h2>
                                     <p className="notFoundText">
                                         This page is incidentally inaccessible
